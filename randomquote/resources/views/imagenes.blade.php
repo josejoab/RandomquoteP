@@ -1,0 +1,1 @@
+<img src="{{ url('/imagenes/'.$data['img']) }}" width="400" height="300">
