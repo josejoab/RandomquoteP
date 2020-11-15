@@ -15,6 +15,7 @@ class ImageController extends Controller
         $totalQuotes = (count(ImageController::$images));
         $randomNumber = (rand(0,($totalQuotes-1)));
         $data['img'] = ImageController::$images[$randomNumber];
+        $data['ip'] = gethostbyname(gethostname());
         return view('imagenes')->with('data',$data);
     }
     
